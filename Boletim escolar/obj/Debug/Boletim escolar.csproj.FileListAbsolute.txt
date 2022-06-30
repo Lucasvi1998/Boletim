@@ -1,0 +1,12 @@
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\bin\Debug\Boletim escolar.exe.config
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\bin\Debug\Boletim escolar.exe
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\bin\Debug\Boletim escolar.pdb
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim escolar.csprojResolveAssemblyReference.cache
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim_escolar.Form1.resources
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim_escolar.Properties.Resources.resources
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim escolar.csproj.GenerateResource.Cache
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim escolar.exe
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\Boletim escolar\obj\Debug\Boletim escolar.pdb
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\bin\Debug\Boletim escolar.exe.config
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\obj\Debug\Boletim escolar.exe
+C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\obj\Debug\Boletim escolar.pdb
