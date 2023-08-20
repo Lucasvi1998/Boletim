@@ -401,11 +401,6 @@ namespace Boletim_escolar
 
        
 
-        private void lblresultado_TextChanged_1(object sender, EventArgs e)
-        {
-           
-          
-
-        }
+      
     }
 }

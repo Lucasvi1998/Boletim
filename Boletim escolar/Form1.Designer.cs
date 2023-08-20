@@ -447,7 +447,7 @@
             this.lblresultado.Name = "lblresultado";
             this.lblresultado.Size = new System.Drawing.Size(76, 20);
             this.lblresultado.TabIndex = 34;
-            this.lblresultado.TextChanged += new System.EventHandler(this.lblresultado_TextChanged_1);
+        
             // 
             // label17
             // 

@@ -10,3 +10,13 @@ C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim escolar\
 C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\bin\Debug\Boletim escolar.exe.config
 C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\obj\Debug\Boletim escolar.exe
 C:\Users\Vinicius e Larissa\Desktop\Visual Studio\exercício 45\Boletim-escolar\Boletim escolar\obj\Debug\Boletim escolar.pdb
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\bin\Debug\Boletim escolar.exe.config
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\bin\Debug\Boletim escolar.exe
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\bin\Debug\Boletim escolar.pdb
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim escolar.csproj.AssemblyReference.cache
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim_escolar.Form1.resources
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim_escolar.Properties.Resources.resources
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim escolar.csproj.GenerateResource.cache
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim escolar.exe
+C:\Users\Lucas\Source\Repos\Boletim\Boletim escolar\obj\Debug\Boletim escolar.pdb
