@@ -26,13 +26,9 @@ namespace Boletim_escolar
         {
             try
             {
-                double nota1, nota2, nota3, nota4, resultado;
-                double nota5, nota6, nota7, nota8, resultado4;
-                double nota9, nota10, nota11, nota12, resultado5;
-                double nota13, nota14, nota15, nota16, resultado6;
-                double nota17, nota18, nota19, nota20, resultado7;
-                double nota21, nota22, nota23, nota24, resultado8;
-                double nota25, nota26, nota27, nota28, resultado9;
+                double[] notas = new double[29];
+                double[] resultadosNotas = new double[7];
+                
 
                 int falta1, falta2, falta3, falta4, resultado3;
                 int falta5, falta6, falta7, falta8, resultado10;
@@ -51,34 +47,34 @@ namespace Boletim_escolar
                 string resultado21 = "Resultado";
 
 
-                nota1 = Convert.ToDouble(txtnota1.Text);
-                nota2 = Convert.ToDouble(txtnota2.Text);
-                nota3 = Convert.ToDouble(txtnota3.Text);
-                nota4 = Convert.ToDouble(txtnota4.Text);
-                nota5 = Convert.ToDouble(txtnota5.Text);
-                nota6 = Convert.ToDouble(txtnota6.Text);
-                nota7 = Convert.ToDouble(txtnota7.Text);
-                nota8 = Convert.ToDouble(txtnota8.Text);
-                nota9 = Convert.ToDouble(txtnota9.Text);
-                nota10 = Convert.ToDouble(txtnota10.Text);
-                nota11 = Convert.ToDouble(txtnota11.Text);
-                nota12 = Convert.ToDouble(txtnota12.Text);
-                nota13 = Convert.ToDouble(txtnota13.Text);
-                nota14 = Convert.ToDouble(txtnota14.Text);
-                nota15 = Convert.ToDouble(txtnota15.Text);
-                nota16 = Convert.ToDouble(txtnota16.Text);
-                nota17 = Convert.ToDouble(txtnota17.Text);
-                nota18 = Convert.ToDouble(txtnota18.Text);
-                nota19 = Convert.ToDouble(txtnota19.Text);
-                nota20 = Convert.ToDouble(txtnota20.Text);
-                nota21 = Convert.ToDouble(txtnota21.Text);
-                nota22 = Convert.ToDouble(txtnota22.Text);
-                nota23 = Convert.ToDouble(txtnota23.Text);
-                nota24 = Convert.ToDouble(txtnota24.Text);
-                nota25 = Convert.ToDouble(txtnota25.Text);
-                nota26 = Convert.ToDouble(txtnota26.Text);
-                nota27 = Convert.ToDouble(txtnota27.Text);
-                nota28 = Convert.ToDouble(txtnota28.Text);
+                notas[0] = Convert.ToDouble(txtnota1.Text);
+                notas[1] = Convert.ToDouble(txtnota2.Text);
+                notas[2] = Convert.ToDouble(txtnota3.Text);
+                notas[3] = Convert.ToDouble(txtnota4.Text);
+                notas[4] = Convert.ToDouble(txtnota5.Text);
+                notas[5] = Convert.ToDouble(txtnota6.Text);
+                notas[6] = Convert.ToDouble(txtnota7.Text);
+                notas[7] = Convert.ToDouble(txtnota8.Text);
+                notas[8] = Convert.ToDouble(txtnota9.Text);
+                notas[9] = Convert.ToDouble(txtnota10.Text);
+                notas[10] = Convert.ToDouble(txtnota11.Text);
+                notas[11] = Convert.ToDouble(txtnota12.Text);
+                notas[12] = Convert.ToDouble(txtnota13.Text);
+                notas[13] = Convert.ToDouble(txtnota14.Text);
+                notas[14] = Convert.ToDouble(txtnota15.Text);
+                notas[15] = Convert.ToDouble(txtnota16.Text);
+                notas[16] = Convert.ToDouble(txtnota17.Text);
+                notas[17] = Convert.ToDouble(txtnota18.Text);
+                notas[18] = Convert.ToDouble(txtnota19.Text);
+                notas[19] = Convert.ToDouble(txtnota20.Text);
+                notas[20] = Convert.ToDouble(txtnota21.Text);
+                notas[21] = Convert.ToDouble(txtnota22.Text);
+                notas[22] = Convert.ToDouble(txtnota23.Text);
+                notas[23] = Convert.ToDouble(txtnota24.Text);
+                notas[24] = Convert.ToDouble(txtnota25.Text);
+                notas[25] = Convert.ToDouble(txtnota26.Text);
+                notas[26] = Convert.ToDouble(txtnota27.Text);
+                notas[27] = Convert.ToDouble(txtnota28.Text);
 
                 falta1 = Convert.ToInt32(txtfalta1.Text);
                 falta2 = Convert.ToInt32(txtfalta2.Text);
@@ -110,21 +106,21 @@ namespace Boletim_escolar
                 falta28 = Convert.ToInt32(txtfalta28.Text);
 
 
-                resultado = nota1 + nota2 + nota3 + nota4;
-                resultado4 = nota5 + nota6 + nota7 + nota8;
-                resultado5 = nota9 + nota10 + nota11 + nota12;
-                resultado6 = nota13 + nota14 + nota15 + nota16;
-                resultado7 = nota17 + nota18 + nota19 + nota20;
-                resultado8 = nota21 + nota22 + nota23 + nota24;
-                resultado9 = nota25 + nota26 + nota27 + nota28;
+                resultadosNotas[0] = notas[0] + notas[1] + notas[2] + notas[3];
+                resultadosNotas[1] = notas[4] + notas[5] + notas[6] + notas[7];
+                resultadosNotas[2] = notas[8] + notas[9] + notas[10] + notas[11];
+                resultadosNotas[3] = notas[12] + notas[13] + notas[14] + notas[15];
+                resultadosNotas[4] = notas[16] + notas[17] + notas[18] + notas[19];
+                resultadosNotas[5] = notas[20] + notas[21] + notas[22] + notas[23];
+                resultadosNotas[6] = notas[24] + notas[25] + notas[26] + notas[27];
 
-                lblresultado.Text = Convert.ToString(resultado);
-                lblresultado4.Text = Convert.ToString(resultado4);
-                lblresultado5.Text = Convert.ToString(resultado5);
-                lblresultado6.Text = Convert.ToString(resultado6);
-                lblresultado7.Text = Convert.ToString(resultado7);
-                lblresultado8.Text = Convert.ToString(resultado8);
-                lblresultado9.Text = Convert.ToString(resultado9);
+                lblresultado.Text = Convert.ToString(resultadosNotas[0]);
+                lblresultado4.Text = Convert.ToString(resultadosNotas[1]);
+                lblresultado5.Text = Convert.ToString(resultadosNotas[2]);
+                lblresultado6.Text = Convert.ToString(resultadosNotas[3]);
+                lblresultado7.Text = Convert.ToString(resultadosNotas[4]);
+                lblresultado8.Text = Convert.ToString(resultadosNotas[5]);
+                lblresultado9.Text = Convert.ToString(resultadosNotas[6]);
 
                 resultado3 = falta1 + falta2 + falta3 + falta4;
                 resultado10 = falta5 + falta6 + falta7 + falta8;
@@ -142,14 +138,14 @@ namespace Boletim_escolar
                 lblresultado14.Text = Convert.ToString(resultado14);
                 lblresultado15.Text = Convert.ToString(resultado15);
 
-                if (((resultado <= 22.0) || (resultado <= 23.0) && (resultado3 > 15)))
+                if (((resultadosNotas[0] <= 22.0) || (resultadosNotas[0] <= 23.0) && (resultado3 > 15)))
                 {
                     resultado2= "Reprovado";
                     lblresultado2.ForeColor = Color.Red;
                 }
                
                 else
-                if  ((resultado <= 23.0) || (resultado <= 24.0) && (resultado3 > 15) || (resultado3 > 25))
+                if  ((resultadosNotas[0] <= 23.0) || (resultadosNotas[0] <= 24.0) && (resultado3 > 15) || (resultado3 > 25))
                 {
                     resultado2 = "Recuperação final";
                     lblresultado2.ForeColor = Color.Green;
@@ -163,14 +159,14 @@ namespace Boletim_escolar
                 lblresultado2.Text = resultado2;
                 
 
-                if ((resultado4 <= 22.0) || (resultado4 <= 23.0) && (resultado10 > 15))
+                if ((resultadosNotas[1] <= 22.0) || (resultadosNotas[1] <= 23.0) && (resultado10 > 15))
                 {
                     resultado16 = "Reprovado";
                     lblresultado16.ForeColor = Color.Red;
                 }
                 
                 else
-               if ((resultado4 <= 23.0) || (resultado4 <= 24.0) && (resultado10 > 15) || (resultado10 > 25))
+               if ((resultadosNotas[1] <= 23.0) || (resultadosNotas[1] <= 24.0) && (resultado10 > 15) || (resultado10 > 25))
                 {
                     resultado16 = "Recuperação final";
                     lblresultado16.ForeColor = Color.Green;
@@ -184,14 +180,14 @@ namespace Boletim_escolar
                 lblresultado16.Text = resultado16;
 
 
-                if ((resultado5 <= 22.0) || (resultado5 <= 23.0) && (resultado11 > 15))
+                if ((resultadosNotas[2] <= 22.0) || (resultadosNotas[2] <= 23.0) && (resultado11 > 15))
                 {
                     resultado17 = "Reprovado";
                     lblresultado17.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultado5 <= 23.0) || (resultado5 <= 24.0) && (resultado11 > 15) || (resultado11 > 25))
+               if ((resultadosNotas[2] <= 23.0) || (resultadosNotas[2] <= 24.0) && (resultado11 > 15) || (resultado11 > 25))
                 {
                     resultado17 = "Recuperação final";
                     lblresultado17.ForeColor = Color.Green;
@@ -205,14 +201,14 @@ namespace Boletim_escolar
                 lblresultado17.Text = resultado17;
 
 
-                if ((resultado6 <= 22.0) || (resultado6 <= 23.0) && (resultado12 > 15))
+                if ((resultadosNotas[3] <= 22.0) || (resultadosNotas[3] <= 23.0) && (resultado12 > 15))
                 {
                     resultado18 = "Reprovado";
                     lblresultado18.ForeColor = Color.Red;
                 }
               
                 else
-               if ((resultado6 <= 23.0) || (resultado6 <= 24.0) && (resultado12 > 15) || (resultado12 > 25))
+               if ((resultadosNotas[3] <= 23.0) || (resultadosNotas[3] <= 24.0) && (resultado12 > 15) || (resultado12 > 25))
                 {
                     resultado18 = "Recuperação final";
                     lblresultado18.ForeColor = Color.Green;
@@ -226,14 +222,14 @@ namespace Boletim_escolar
                 lblresultado18.Text = resultado18;
 
 
-                if ((resultado7 <= 22.0) || (resultado7 <= 23.0) && (resultado13 > 15))
+                if ((resultadosNotas[4] <= 22.0) || (resultadosNotas[4] <= 23.0) && (resultado13 > 15))
                 {
                     resultado19 = "Reprovado";
                     lblresultado19.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultado7 <= 23.0) || (resultado7 <= 24.0) && (resultado13 > 15) || (resultado13 > 25))
+               if ((resultadosNotas[4] <= 23.0) || (resultadosNotas[4] <= 24.0) && (resultado13 > 15) || (resultado13 > 25))
                 {
                     resultado19 = "Recuperação final";
                     lblresultado19.ForeColor = Color.Green;
@@ -247,14 +243,14 @@ namespace Boletim_escolar
                 lblresultado19.Text = resultado19;
 
 
-                if ((resultado8 <= 22.0) || (resultado8 <= 23.0) && (resultado14 > 15))
+                if ((resultadosNotas[5] <= 22.0) || (resultadosNotas[5] <= 23.0) && (resultado14 > 15))
                 {
                     resultado20 = "Reprovado";
                     lblresultado20.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultado8 <= 23.0) || (resultado8 <= 24.0) && (resultado14 > 15) || (resultado14 > 25))
+               if ((resultadosNotas[5] <= 23.0) || (resultadosNotas[5] <= 24.0) && (resultado14 > 15) || (resultado14 > 25))
                 {
                     resultado20 = "Recuperação final";
                     lblresultado20.ForeColor = Color.Green;
@@ -268,14 +264,14 @@ namespace Boletim_escolar
                 lblresultado20.Text = resultado20;
 
 
-                if ((resultado9 <= 22.0) || (resultado9 <= 23.0) && (resultado15 > 15))
+                if ((resultadosNotas[6] <= 22.0) || (resultadosNotas[6] <= 23.0) && (resultado15 > 15))
                 {
                     resultado21 = "Reprovado";
                     lblresultado21.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultado9 <= 23.0) || (resultado9 <= 24.0) && (resultado15 > 15) || (resultado15 > 25))
+               if ((resultadosNotas[6] <= 23.0) || (resultadosNotas[6] <= 24.0) && (resultado15 > 15) || (resultado15 > 25))
                 {
                     resultado21 = "Recuperação final";
                     lblresultado21.ForeColor = Color.Green;
