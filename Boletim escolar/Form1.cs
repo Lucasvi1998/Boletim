@@ -26,26 +26,11 @@ namespace Boletim_escolar
         {
             try
             {
-                double[] notas = new double[29];
+                double[] notas = new double[28];
+                int[] faltas = new int[28];
                 double[] resultadosNotas = new double[7];
-                
-
-                int falta1, falta2, falta3, falta4, resultado3;
-                int falta5, falta6, falta7, falta8, resultado10;
-                int falta9, falta10, falta11, falta12, resultado11;
-                int falta13, falta14, falta15, falta16, resultado12;
-                int falta17, falta18, falta19, falta20, resultado13;
-                int falta21, falta22, falta23, falta24, resultado14;
-                int falta25, falta26, falta27, falta28, resultado15;
-
-                string resultado2 = "Resultado";
-                string resultado16 = "Resultado";
-                string resultado17 = "Resultado";
-                string resultado18 = "Resultado";
-                string resultado19 = "Resultado";
-                string resultado20 = "Resultado";
-                string resultado21 = "Resultado";
-
+                int[] resultadosFaltas = new int[7];
+                string[] resultadoEscrito = new string[7];
 
                 notas[0] = Convert.ToDouble(txtnota1.Text);
                 notas[1] = Convert.ToDouble(txtnota2.Text);
@@ -76,34 +61,34 @@ namespace Boletim_escolar
                 notas[26] = Convert.ToDouble(txtnota27.Text);
                 notas[27] = Convert.ToDouble(txtnota28.Text);
 
-                falta1 = Convert.ToInt32(txtfalta1.Text);
-                falta2 = Convert.ToInt32(txtfalta2.Text);
-                falta3 = Convert.ToInt32(txtfalta3.Text);
-                falta4 = Convert.ToInt32(txtfalta4.Text);
-                falta5 = Convert.ToInt32(txtfalta5.Text);
-                falta6 = Convert.ToInt32(txtfalta6.Text);
-                falta7 = Convert.ToInt32(txtfalta7.Text);
-                falta8 = Convert.ToInt32(txtfalta8.Text);
-                falta9 = Convert.ToInt32(txtfalta9.Text);
-                falta10 = Convert.ToInt32(txtfalta10.Text);
-                falta11 = Convert.ToInt32(txtfalta11.Text);
-                falta12 = Convert.ToInt32(txtfalta12.Text);
-                falta13 = Convert.ToInt32(txtfalta13.Text);
-                falta14 = Convert.ToInt32(txtfalta14.Text);
-                falta15 = Convert.ToInt32(txtfalta15.Text);
-                falta16 = Convert.ToInt32(txtfalta16.Text);
-                falta17 = Convert.ToInt32(txtfalta17.Text);
-                falta18 = Convert.ToInt32(txtfalta18.Text);
-                falta19 = Convert.ToInt32(txtfalta19.Text);
-                falta20 = Convert.ToInt32(txtfalta20.Text);
-                falta21 = Convert.ToInt32(txtfalta21.Text);
-                falta22 = Convert.ToInt32(txtfalta22.Text);
-                falta23 = Convert.ToInt32(txtfalta23.Text);
-                falta24 = Convert.ToInt32(txtfalta24.Text);
-                falta25 = Convert.ToInt32(txtfalta25.Text);
-                falta26 = Convert.ToInt32(txtfalta26.Text);
-                falta27 = Convert.ToInt32(txtfalta27.Text);
-                falta28 = Convert.ToInt32(txtfalta28.Text);
+                faltas[0] = Convert.ToInt32(txtfalta1.Text);
+                faltas[1] = Convert.ToInt32(txtfalta2.Text);
+                faltas[2] = Convert.ToInt32(txtfalta3.Text);
+                faltas[3] = Convert.ToInt32(txtfalta4.Text);
+                faltas[4] = Convert.ToInt32(txtfalta5.Text);
+                faltas[5] = Convert.ToInt32(txtfalta6.Text);
+                faltas[6] = Convert.ToInt32(txtfalta7.Text);
+                faltas[7] = Convert.ToInt32(txtfalta8.Text);
+                faltas[8] = Convert.ToInt32(txtfalta9.Text);
+                faltas[9] = Convert.ToInt32(txtfalta10.Text);
+                faltas[10] = Convert.ToInt32(txtfalta11.Text);
+                faltas[11] = Convert.ToInt32(txtfalta12.Text);
+                faltas[12] = Convert.ToInt32(txtfalta13.Text);
+                faltas[13] = Convert.ToInt32(txtfalta14.Text);
+                faltas[14] = Convert.ToInt32(txtfalta15.Text);
+                faltas[15] = Convert.ToInt32(txtfalta16.Text);
+                faltas[16] = Convert.ToInt32(txtfalta17.Text);
+                faltas[17] = Convert.ToInt32(txtfalta18.Text);
+                faltas[18] = Convert.ToInt32(txtfalta19.Text);
+                faltas[19] = Convert.ToInt32(txtfalta20.Text);
+                faltas[20] = Convert.ToInt32(txtfalta21.Text);
+                faltas[21] = Convert.ToInt32(txtfalta22.Text);
+                faltas[22] = Convert.ToInt32(txtfalta23.Text);
+                faltas[23] = Convert.ToInt32(txtfalta24.Text);
+                faltas[24] = Convert.ToInt32(txtfalta25.Text);
+                faltas[25] = Convert.ToInt32(txtfalta26.Text);
+                faltas[26] = Convert.ToInt32(txtfalta27.Text);
+                faltas[27] = Convert.ToInt32(txtfalta28.Text);
 
 
                 resultadosNotas[0] = notas[0] + notas[1] + notas[2] + notas[3];
@@ -122,167 +107,167 @@ namespace Boletim_escolar
                 lblresultado8.Text = Convert.ToString(resultadosNotas[5]);
                 lblresultado9.Text = Convert.ToString(resultadosNotas[6]);
 
-                resultado3 = falta1 + falta2 + falta3 + falta4;
-                resultado10 = falta5 + falta6 + falta7 + falta8;
-                resultado11 = falta9 + falta10 + falta11 + falta12;
-                resultado12 = falta13 + falta14 + falta15 + falta16;
-                resultado13 = falta17 + falta18 + falta19 + falta20;
-                resultado14 = falta21 + falta22 + falta23 + falta24;
-                resultado15 = falta25 + falta26 + falta27 + falta28;
+                resultadosFaltas[0] = faltas[0] + faltas[1] + faltas[2] + faltas[3];
+                resultadosFaltas[1] = faltas[4] + faltas[5] + faltas[6] + faltas[7];
+                resultadosFaltas[2] = faltas[8] + faltas[9] + faltas[10] + faltas[11];
+                resultadosFaltas[3] = faltas[12] + faltas[13] + faltas[14] + faltas[15];
+                resultadosFaltas[4] = faltas[16] + faltas[17] + faltas[18] + faltas[19];
+                resultadosFaltas[5] = faltas[20] + faltas[21] + faltas[22] + faltas[23];
+                resultadosFaltas[6] = faltas[24] + faltas[25] + faltas[26] + faltas[27];
 
-                lblresultado3.Text = Convert.ToString(resultado3);
-                lblresultado10.Text = Convert.ToString(resultado10);
-                lblresultado11.Text = Convert.ToString(resultado11);
-                lblresultado12.Text = Convert.ToString(resultado12);
-                lblresultado13.Text = Convert.ToString(resultado13);
-                lblresultado14.Text = Convert.ToString(resultado14);
-                lblresultado15.Text = Convert.ToString(resultado15);
+                lblresultado3.Text = Convert.ToString(resultadosFaltas[0]);
+                lblresultado10.Text = Convert.ToString(resultadosFaltas[1]);
+                lblresultado11.Text = Convert.ToString(resultadosFaltas[2]);
+                lblresultado12.Text = Convert.ToString(resultadosFaltas[3]);
+                lblresultado13.Text = Convert.ToString(resultadosFaltas[4]);
+                lblresultado14.Text = Convert.ToString(resultadosFaltas[5]);
+                lblresultado15.Text = Convert.ToString(resultadosFaltas[6]);
 
-                if (((resultadosNotas[0] <= 22.0) || (resultadosNotas[0] <= 23.0) && (resultado3 > 15)))
+                if (((resultadosNotas[0] <= 22.0) || (resultadosNotas[0] <= 23.0) && (resultadosFaltas[0] > 15)))
                 {
-                    resultado2= "Reprovado";
+                    resultadoEscrito[0]= "Reprovado";
                     lblresultado2.ForeColor = Color.Red;
                 }
                
                 else
-                if  ((resultadosNotas[0] <= 23.0) || (resultadosNotas[0] <= 24.0) && (resultado3 > 15) || (resultado3 > 25))
+                if  ((resultadosNotas[0] <= 23.0) || (resultadosNotas[0] <= 24.0) && (resultadosFaltas[0] > 15) || (resultadosFaltas[0] > 25))
                 {
-                    resultado2 = "Recuperação final";
+                    resultadoEscrito[0] = "Recuperação final";
                     lblresultado2.ForeColor = Color.Green;
                 }
    
                  else
                 {
-                    resultado2 = "Aprovado";
+                    resultadoEscrito[0] = "Aprovado";
                     lblresultado2.ForeColor = Color.Blue;
                 }
-                lblresultado2.Text = resultado2;
+                lblresultado2.Text = resultadoEscrito[0];
                 
 
-                if ((resultadosNotas[1] <= 22.0) || (resultadosNotas[1] <= 23.0) && (resultado10 > 15))
+                if ((resultadosNotas[1] <= 22.0) || (resultadosNotas[1] <= 23.0) && (resultadosFaltas[1] > 15))
                 {
-                    resultado16 = "Reprovado";
+                    resultadoEscrito[1] = "Reprovado";
                     lblresultado16.ForeColor = Color.Red;
                 }
                 
                 else
-               if ((resultadosNotas[1] <= 23.0) || (resultadosNotas[1] <= 24.0) && (resultado10 > 15) || (resultado10 > 25))
+               if ((resultadosNotas[1] <= 23.0) || (resultadosNotas[1] <= 24.0) && (resultadosFaltas[1] > 15) || (resultadosFaltas[1] > 25))
                 {
-                    resultado16 = "Recuperação final";
+                    resultadoEscrito[1] = "Recuperação final";
                     lblresultado16.ForeColor = Color.Green;
                 }
                 
                 else
                 {
-                    resultado16 = "Aprovado";
+                    resultadoEscrito[1] = "Aprovado";
                     lblresultado16.ForeColor = Color.Blue;
                 }
-                lblresultado16.Text = resultado16;
+                lblresultado16.Text = resultadoEscrito[1];
 
 
-                if ((resultadosNotas[2] <= 22.0) || (resultadosNotas[2] <= 23.0) && (resultado11 > 15))
+                if ((resultadosNotas[2] <= 22.0) || (resultadosNotas[2] <= 23.0) && (resultadosFaltas[2] > 15))
                 {
-                    resultado17 = "Reprovado";
+                    resultadoEscrito[2] = "Reprovado";
                     lblresultado17.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultadosNotas[2] <= 23.0) || (resultadosNotas[2] <= 24.0) && (resultado11 > 15) || (resultado11 > 25))
+               if ((resultadosNotas[2] <= 23.0) || (resultadosNotas[2] <= 24.0) && (resultadosFaltas[2] > 15) || (resultadosFaltas[2] > 25))
                 {
-                    resultado17 = "Recuperação final";
+                    resultadoEscrito[2] = "Recuperação final";
                     lblresultado17.ForeColor = Color.Green;
                 }
                
                 else
                 {
-                    resultado17 = "Aprovado";
+                    resultadoEscrito[2] = "Aprovado";
                     lblresultado17.ForeColor = Color.Blue;
                 }
-                lblresultado17.Text = resultado17;
+                lblresultado17.Text = resultadoEscrito[2];
 
 
-                if ((resultadosNotas[3] <= 22.0) || (resultadosNotas[3] <= 23.0) && (resultado12 > 15))
+                if ((resultadosNotas[3] <= 22.0) || (resultadosNotas[3] <= 23.0) && (resultadosFaltas[3] > 15))
                 {
-                    resultado18 = "Reprovado";
+                    resultadoEscrito[3] = "Reprovado";
                     lblresultado18.ForeColor = Color.Red;
                 }
               
                 else
-               if ((resultadosNotas[3] <= 23.0) || (resultadosNotas[3] <= 24.0) && (resultado12 > 15) || (resultado12 > 25))
+               if ((resultadosNotas[3] <= 23.0) || (resultadosNotas[3] <= 24.0) && (resultadosFaltas[3]> 15) || (resultadosFaltas[3] > 25))
                 {
-                    resultado18 = "Recuperação final";
+                    resultadoEscrito[3] = "Recuperação final";
                     lblresultado18.ForeColor = Color.Green;
                 }
                 
                 else
                 {
-                    resultado18 = "Aprovado";
+                    resultadoEscrito[3] = "Aprovado";
                     lblresultado18.ForeColor = Color.Blue;
                 }
-                lblresultado18.Text = resultado18;
+                lblresultado18.Text = resultadoEscrito[2];
 
 
-                if ((resultadosNotas[4] <= 22.0) || (resultadosNotas[4] <= 23.0) && (resultado13 > 15))
+                if ((resultadosNotas[4] <= 22.0) || (resultadosNotas[4] <= 23.0) && (resultadosFaltas[4] > 15))
                 {
-                    resultado19 = "Reprovado";
+                    resultadoEscrito[4] = "Reprovado";
                     lblresultado19.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultadosNotas[4] <= 23.0) || (resultadosNotas[4] <= 24.0) && (resultado13 > 15) || (resultado13 > 25))
+               if ((resultadosNotas[4] <= 23.0) || (resultadosNotas[4] <= 24.0) && (resultadosFaltas[4] > 15) || (resultadosFaltas[4] > 25))
                 {
-                    resultado19 = "Recuperação final";
+                    resultadoEscrito[4] = "Recuperação final";
                     lblresultado19.ForeColor = Color.Green;
                 }
                
                 else
                 {
-                    resultado19 = "Aprovado";
+                    resultadoEscrito[4] = "Aprovado";
                     lblresultado19.ForeColor = Color.Blue;
                 }
-                lblresultado19.Text = resultado19;
+                lblresultado19.Text = resultadoEscrito[4];
 
 
-                if ((resultadosNotas[5] <= 22.0) || (resultadosNotas[5] <= 23.0) && (resultado14 > 15))
+                if ((resultadosNotas[5] <= 22.0) || (resultadosNotas[5] <= 23.0) && (resultadosFaltas[5] > 15))
                 {
-                    resultado20 = "Reprovado";
+                    resultadoEscrito[5] = "Reprovado";
                     lblresultado20.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultadosNotas[5] <= 23.0) || (resultadosNotas[5] <= 24.0) && (resultado14 > 15) || (resultado14 > 25))
+               if ((resultadosNotas[5] <= 23.0) || (resultadosNotas[5] <= 24.0) && (resultadosFaltas[5] > 15) || (resultadosFaltas[5] > 25))
                 {
-                    resultado20 = "Recuperação final";
+                    resultadoEscrito[5] = "Recuperação final";
                     lblresultado20.ForeColor = Color.Green;
                 }
                 
                 else
                 {
-                    resultado20 = "Aprovado";
+                    resultadoEscrito[5] = "Aprovado";
                     lblresultado20.ForeColor = Color.Blue;
                 }
-                lblresultado20.Text = resultado20;
+                lblresultado20.Text = resultadoEscrito[5];
 
 
-                if ((resultadosNotas[6] <= 22.0) || (resultadosNotas[6] <= 23.0) && (resultado15 > 15))
+                if ((resultadosNotas[6] <= 22.0) || (resultadosNotas[6] <= 23.0) && (resultadosFaltas[6] > 15))
                 {
-                    resultado21 = "Reprovado";
+                    resultadoEscrito[6] = "Reprovado";
                     lblresultado21.ForeColor = Color.Red;
                 }
                
                 else
-               if ((resultadosNotas[6] <= 23.0) || (resultadosNotas[6] <= 24.0) && (resultado15 > 15) || (resultado15 > 25))
+               if ((resultadosNotas[6] <= 23.0) || (resultadosNotas[6] <= 24.0) && (resultadosFaltas[6] > 15) || (resultadosFaltas[6] > 25))
                 {
-                    resultado21 = "Recuperação final";
+                    resultadoEscrito[6] = "Recuperação final";
                     lblresultado21.ForeColor = Color.Green;
                 }
              
                 else
                 {
-                    resultado21 = "Aprovado";
+                    resultadoEscrito[6] = "Aprovado";
                     lblresultado21.ForeColor = Color.Blue;
                 }
-                lblresultado21.Text = resultado21;
+                lblresultado21.Text = resultadoEscrito[6];
             }
             //vai apresentra erro se digitar letra no campo
             catch (FormatException ex)
@@ -393,10 +378,5 @@ namespace Boletim_escolar
             lblresultado8.Clear();
             lblresultado9.Clear();
             
-        }
-
-       
-
-      
-    }
-}
+       }
+  } }
