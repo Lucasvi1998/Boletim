@@ -362,7 +362,7 @@ namespace Boletim_escolar
             lblresultado14.Clear();
             lblresultado15.Clear();
 
-            lblresultado2.Text="Resultado";    lblresultado2.ForeColor = Color.Black;
+            lblresultado2.Text= "Resultado";    lblresultado2.ForeColor = Color.Black;
             lblresultado16.Text = "Resultado"; lblresultado16.ForeColor = Color.Black;
             lblresultado17.Text = "Resultado"; lblresultado17.ForeColor = Color.Black;
             lblresultado18.Text = "Resultado"; lblresultado18.ForeColor = Color.Black;
@@ -379,4 +379,10 @@ namespace Boletim_escolar
             lblresultado9.Clear();
             
        }
-  } }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}
