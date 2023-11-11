@@ -46,13 +46,11 @@ namespace Boletim_escolar
 
                
 
-                resultadosNotas[0] = notas[0] + notas[1] + notas[2] + notas[3];
-                resultadosNotas[1] = notas[4] + notas[5] + notas[6] + notas[7];
-                resultadosNotas[2] = notas[8] + notas[9] + notas[10] + notas[11];
-                resultadosNotas[3] = notas[12] + notas[13] + notas[14] + notas[15];
-                resultadosNotas[4] = notas[16] + notas[17] + notas[18] + notas[19];
-                resultadosNotas[5] = notas[20] + notas[21] + notas[22] + notas[23];
-                resultadosNotas[6] = notas[24] + notas[25] + notas[26] + notas[27];
+               for (int i = 0; i < 7; i++)
+               {
+                  int startIndex = i * 4;
+                  resultadosNotas[i] = notas[startIndex] + notas[startIndex + 1] + notas[startIndex + 2] + notas[startIndex + 3];
+               }
 
                 lblresultado.Text = Convert.ToString(resultadosNotas[0]);
                 lblresultado4.Text = Convert.ToString(resultadosNotas[1]);
