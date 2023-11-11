@@ -32,64 +32,19 @@ namespace Boletim_escolar
                 int[] resultadosFaltas = new int[7];
                 string[] resultadoEscrito = new string[7];
 
-                notas[0] = Convert.ToDouble(txtnota1.Text);
-                notas[1] = Convert.ToDouble(txtnota2.Text);
-                notas[2] = Convert.ToDouble(txtnota3.Text);
-                notas[3] = Convert.ToDouble(txtnota4.Text);
-                notas[4] = Convert.ToDouble(txtnota5.Text);
-                notas[5] = Convert.ToDouble(txtnota6.Text);
-                notas[6] = Convert.ToDouble(txtnota7.Text);
-                notas[7] = Convert.ToDouble(txtnota8.Text);
-                notas[8] = Convert.ToDouble(txtnota9.Text);
-                notas[9] = Convert.ToDouble(txtnota10.Text);
-                notas[10] = Convert.ToDouble(txtnota11.Text);
-                notas[11] = Convert.ToDouble(txtnota12.Text);
-                notas[12] = Convert.ToDouble(txtnota13.Text);
-                notas[13] = Convert.ToDouble(txtnota14.Text);
-                notas[14] = Convert.ToDouble(txtnota15.Text);
-                notas[15] = Convert.ToDouble(txtnota16.Text);
-                notas[16] = Convert.ToDouble(txtnota17.Text);
-                notas[17] = Convert.ToDouble(txtnota18.Text);
-                notas[18] = Convert.ToDouble(txtnota19.Text);
-                notas[19] = Convert.ToDouble(txtnota20.Text);
-                notas[20] = Convert.ToDouble(txtnota21.Text);
-                notas[21] = Convert.ToDouble(txtnota22.Text);
-                notas[22] = Convert.ToDouble(txtnota23.Text);
-                notas[23] = Convert.ToDouble(txtnota24.Text);
-                notas[24] = Convert.ToDouble(txtnota25.Text);
-                notas[25] = Convert.ToDouble(txtnota26.Text);
-                notas[26] = Convert.ToDouble(txtnota27.Text);
-                notas[27] = Convert.ToDouble(txtnota28.Text);
+             for (int i = 0; i < 28; i++)
+                {
+                   string textBoxName = "txtnota" + (i + 1).ToString();
+                   notas[i] = Convert.ToDouble(((TextBox)Controls[textBoxName]).Text);
+                }
 
-                faltas[0] = Convert.ToInt32(txtfalta1.Text);
-                faltas[1] = Convert.ToInt32(txtfalta2.Text);
-                faltas[2] = Convert.ToInt32(txtfalta3.Text);
-                faltas[3] = Convert.ToInt32(txtfalta4.Text);
-                faltas[4] = Convert.ToInt32(txtfalta5.Text);
-                faltas[5] = Convert.ToInt32(txtfalta6.Text);
-                faltas[6] = Convert.ToInt32(txtfalta7.Text);
-                faltas[7] = Convert.ToInt32(txtfalta8.Text);
-                faltas[8] = Convert.ToInt32(txtfalta9.Text);
-                faltas[9] = Convert.ToInt32(txtfalta10.Text);
-                faltas[10] = Convert.ToInt32(txtfalta11.Text);
-                faltas[11] = Convert.ToInt32(txtfalta12.Text);
-                faltas[12] = Convert.ToInt32(txtfalta13.Text);
-                faltas[13] = Convert.ToInt32(txtfalta14.Text);
-                faltas[14] = Convert.ToInt32(txtfalta15.Text);
-                faltas[15] = Convert.ToInt32(txtfalta16.Text);
-                faltas[16] = Convert.ToInt32(txtfalta17.Text);
-                faltas[17] = Convert.ToInt32(txtfalta18.Text);
-                faltas[18] = Convert.ToInt32(txtfalta19.Text);
-                faltas[19] = Convert.ToInt32(txtfalta20.Text);
-                faltas[20] = Convert.ToInt32(txtfalta21.Text);
-                faltas[21] = Convert.ToInt32(txtfalta22.Text);
-                faltas[22] = Convert.ToInt32(txtfalta23.Text);
-                faltas[23] = Convert.ToInt32(txtfalta24.Text);
-                faltas[24] = Convert.ToInt32(txtfalta25.Text);
-                faltas[25] = Convert.ToInt32(txtfalta26.Text);
-                faltas[26] = Convert.ToInt32(txtfalta27.Text);
-                faltas[27] = Convert.ToInt32(txtfalta28.Text);
+             for (int i = 0; i < 28; i++)
+                {
+                    string textBoxName1 = "txtfalta" + (i + 1).ToString();
+                    faltas[i] = Convert.ToInt32(((TextBox)Controls[textBoxName1]).Text);
+                }
 
+               
 
                 resultadosNotas[0] = notas[0] + notas[1] + notas[2] + notas[3];
                 resultadosNotas[1] = notas[4] + notas[5] + notas[6] + notas[7];
