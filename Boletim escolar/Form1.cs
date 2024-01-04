@@ -45,8 +45,7 @@ namespace Boletim_escolar
                 }
 
                
-
-               for (int i = 0; i < 7; i++)
+             for (int i = 0; i < 7; i++)
                {
                   int startIndex = i * 4;
                   resultadosNotas[i] = notas[startIndex] + notas[startIndex + 1] + notas[startIndex + 2] + notas[startIndex + 3];
@@ -249,73 +248,32 @@ namespace Boletim_escolar
 
         private void button2_Click(object sender, EventArgs e)
         {
-            txtnota1.Clear();
-            txtnota2.Clear();
-            txtnota3.Clear();
-            txtnota4.Clear();
-            txtnota5.Clear();
-            txtnota6.Clear();
-            txtnota7.Clear();
-            txtnota8.Clear();
-            txtnota9.Clear();
-            txtnota10.Clear();
-            txtnota11.Clear();
-            txtnota12.Clear();
-            txtnota13.Clear();
-            txtnota14.Clear();
-            txtnota15.Clear();
-            txtnota16.Clear();
-            txtnota17.Clear();
-            txtnota18.Clear();
-            txtnota19.Clear();
-            txtnota20.Clear();
-            txtnota21.Clear();
-            txtnota22.Clear();
-            txtnota23.Clear();
-            txtnota24.Clear();
-            txtnota25.Clear();
-            txtnota26.Clear();
-            txtnota27.Clear();
-            txtnota28.Clear();
+//Este código itera sobre todos os controles dentro do formulário e verifica se o controle é um TextBox e se o nome do controle começa com "txtnota".Se ambas as condições forem atendidas, o método Clear() é chamado para limpar o conteúdo do TextBox.Isso evita a necessidade de manter uma contagem explícita de índices.
+            foreach (Control control in Controls)      
+            {
+                if (control is TextBox && control.Name.StartsWith("txtnota"))
+                {
+                    ((TextBox)control).Clear();
+                }
+            }
 
-            txtfalta1.Clear();
-            txtfalta2.Clear();
-            txtfalta3.Clear();
-            txtfalta4.Clear();
-            txtfalta5.Clear();
-            txtfalta6.Clear();
-            txtfalta7.Clear();
-            txtfalta8.Clear();
-            txtfalta9.Clear();
-            txtfalta10.Clear();
-            txtfalta11.Clear();
-            txtfalta12.Clear();
-            txtfalta13.Clear();
-            txtfalta14.Clear();
-            txtfalta15.Clear();
-            txtfalta16.Clear();
-            txtfalta17.Clear();
-            txtfalta18.Clear();
-            txtfalta19.Clear();
-            txtfalta20.Clear();
-            txtfalta21.Clear();
-            txtfalta22.Clear();
-            txtfalta23.Clear();
-            txtfalta24.Clear();
-            txtfalta25.Clear();
-            txtfalta26.Clear();
-            txtfalta27.Clear();
-            txtfalta28.Clear();
+            foreach(Control control in Controls)
+            {
+                if(control is TextBox && control.Name.StartsWith("txtfalta"))
+                {
+                    ((TextBox)control).Clear();
+                }
+            }
 
-            lblresultado3.Clear();
-            lblresultado10.Clear();
-            lblresultado11.Clear();
-            lblresultado12.Clear();
-            lblresultado13.Clear();
-            lblresultado14.Clear();
-            lblresultado15.Clear();
+            foreach (Control control in Controls)
+            {
+                if (control is TextBox && control.Name.StartsWith("lblresultado"))
+                {
+                    ((TextBox)control).Clear();
+                }
+            }
 
-            lblresultado2.Text= "Resultado";    lblresultado2.ForeColor = Color.Black;
+            lblresultado2.Text= "Resultado";   lblresultado2.ForeColor = Color.Black;
             lblresultado16.Text = "Resultado"; lblresultado16.ForeColor = Color.Black;
             lblresultado17.Text = "Resultado"; lblresultado17.ForeColor = Color.Black;
             lblresultado18.Text = "Resultado"; lblresultado18.ForeColor = Color.Black;
@@ -323,14 +281,7 @@ namespace Boletim_escolar
             lblresultado20.Text = "Resultado"; lblresultado20.ForeColor = Color.Black;
             lblresultado21.Text = "Resultado"; lblresultado21.ForeColor = Color.Black;
 
-            lblresultado.Clear();
-            lblresultado4.Clear();
-            lblresultado5.Clear();
-            lblresultado6.Clear();
-            lblresultado7.Clear();
-            lblresultado8.Clear();
-            lblresultado9.Clear();
-            
+         
        }
 
         private void button3_Click(object sender, EventArgs e)
